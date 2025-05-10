@@ -73,7 +73,7 @@ mmdc -i ClassDiagram.mmd -o ClassDiagram.png
 ```
 <details>
 <summary>creates ClassDiagram.png</summary>
-![Generated Class Diagram](images/repo/ClassDiagram.png)
+<a href="images/repo/ClassDiagram.png" target="_blank">![Generated Class Diagram](images/repo/ClassDiagram.png)</a>
 </details>
 7. **Optional: Use JetBrains WebStorm with the Mermaid plugin**
 - [JetBrains Webstorm](https://www.jetbrains.com/webstorm/)
