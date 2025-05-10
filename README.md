@@ -38,7 +38,7 @@ Use Mermaid to create diagrams to document your project
      - i.e. .../.nvm/versions/node/v22.14.0/bin
 
 5. **Create .mmd files**
-    - Copy/Paste to ClassDiagramExample.mmd
+    - Copy/Paste to ClassDiagram.mmd
    ```mmd
     classDiagram
     class User {
