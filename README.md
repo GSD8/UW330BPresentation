@@ -80,6 +80,6 @@ mmdc -i ClassDiagram.mmd -o ClassDiagram.png
 
 <details>
 <summary>- Install the Mermaid Plugin</summary>
-- [View JetBrains WebStorm Mermaid Plugin](images/repo/JetBrainsWebStormMermaidPlugin.png)
+<a href="images/repo/JetBrainsWebStormMermaidPlugin.png" target="_blank" rel="noopener noreferrer">View JetBrains WebStorm Mermaid Plugin</a>
 </details>
 
