@@ -1,0 +1,16 @@
+flowchart TD
+    User["User"]:::actor
+    Browser["Browser"]:::actor
+    NodeService["Node.js Web Service<br>(Hosted on Railway)"]:::service
+    MongoDB["MongoDB Database<br>(Hosted on Atlas)"]:::database
+
+    User -->|Sends Request| Browser
+    Browser -->|HTTP Request<br>e.g., GET, POST| NodeService
+    NodeService -->|Query/Write<br>Data| MongoDB
+    MongoDB -->|Responds with Data| NodeService
+    NodeService -->|HTTP Response<br>JSON| Browser
+    Browser -->|Displays Data| User
+
+    classDef actor fill:#f9f9f9,stroke:#333,stroke-width:2px,color:#000,font-weight:bold;
+    classDef service fill:#e6ffe6,stroke:#008000,stroke-width:2px,color:#000,font-weight:bold;
+    classDef database fill:#f0f8ff,stroke:#0000ff,stroke-width:2px,color:#000,font-weight:normal;

@@ -1,0 +1,24 @@
+classDiagram
+    class User {
+        string _id
+        string name
+        string email
+        Role[] roles
+    }
+    class Role {
+        string _id
+        string name
+    }
+    User "One" --> "many" Role : "Performs"
+    class Order {
+        string _id
+        UserId string
+        Item[] items
+    }
+    class Item {
+        string _id
+        string title
+        number price
+    }
+    Order "One" --> "many" Item : "Has"
+    User "Zero" --> "many" Order : "Makes"

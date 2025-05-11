@@ -1,0 +1,12 @@
+graph TD
+    Title["Node Service Context Diagram"]:::title
+    Actor1[Admin] --> UseCase1[Maintains User Accounts]
+    Actor1 --> |Their Own|UseCase2[Creates Orders]
+    Actor2[User] -->|Their Own| UseCase2
+    Actor2 --> |Their Own|UseCase3[Views Orders]
+    Actor1 --> |Any|UseCase3[Views Orders]
+    UseCase1 --> System[Node Service]
+    UseCase2 --> System
+    UseCase3 --> System
+
+    classDef title fill:#ffffff,stroke:#008000,stroke-width:4px,color:#000000,font-size:16px,font-weight:bold;
