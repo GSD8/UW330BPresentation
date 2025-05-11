@@ -1,0 +1,26 @@
+erDiagram
+    User {
+        string _id
+        string name
+        string email
+    }
+    Role {
+        string _id
+        string name
+        string content
+        string authorId
+        date createdAt
+    }
+    Order {
+        string _id
+        string UserId
+        string Item
+    }
+    Item {
+        string _id
+        string title
+        number price
+    }
+    User ||--o{ Role : "has 1 to many"
+    User ||--o{ Order : "has 0 to many"
+    Order ||--o{ Item : "has 1 to many"
