@@ -1,7 +1,15 @@
 # UW330BPresentation
 UW 300B JavaScript Presentation
 
-Use Mermaid to create diagrams to document your project
+## Use Mermaid to create diagrams to document your project
+
+# Mermaid
+https://mermaid.js.org/
+- JavaScript-based diagramming tool
+- Text file based
+- Command line to create image files from text filex
+- creates flowcharts, sequence diagrams, class diagrams, entity-relationship diagrams, Gantt charts and others
+- npm package
 
 
 1. **Install Node.js**:
