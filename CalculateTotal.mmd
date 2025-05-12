@@ -1,0 +1,8 @@
+graph TD
+    A[Start] --> B[Initialize total to 0]
+    B --> C[Loop through items]
+    C --> D[Add item price to total]
+    D --> E{More items?}
+    E -- Yes --> C
+    E -- No --> F[Return total]
+    F --> G[End]
