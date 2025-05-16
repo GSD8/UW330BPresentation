@@ -1,0 +1,44 @@
+flowchart LR
+    A[Root Endpoint / ]:::endpoint
+    B[Auth Routes /auth]:::endpoint
+    C[Items Routes /items]:::endpoint
+    D[Orders Routes /orders]:::endpoint
+
+    B1[POST /auth/signup]:::route
+    B2[POST /auth/login]:::route
+    B3[PUT /auth/password]:::route
+
+    C1[GET /items]:::route
+    C2[GET /items/:id]:::route
+    C3[POST /items]:::route
+    C4[PUT /items/:id]:::route
+
+    D1[GET /orders]:::route
+    D2[GET /orders/:id]:::route
+    D3[POST /orders]:::route
+
+    E[isAuthorized -Middleware-]:::route
+
+    A --> B
+    A --> C
+    A --> D
+    B --> B1
+    B --> B2
+    B -->|Change Password| B3
+    B3 -->|Validate Token| E
+    C --> C1
+    C1 -->|Validate Token| E
+    C --> C2
+    C2 -->|Validate Token| E
+    C --> |admin role| C3
+    C3 -->|Validate Token| E
+    C -->|admin role| C4
+    C4 -->|Validate Token| E
+    D --> |admin:any, user:own| D1
+    D1 -->|Validate Token| E
+    D --> |admin:any, user:own| D2
+    D -->|Create Order| D3
+    D3 -->|Validate Token| E
+
+    classDef endpoint fill:#f0f8ff,stroke:#0000ff,stroke-width:2px,color:#000,font-weight:bold;
+    classDef route fill:#e6ffe6,stroke:#008000,stroke-width:2px,color:#000,font-style:italic;
