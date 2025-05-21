@@ -7,7 +7,7 @@ UW 300B JavaScript Presentation
 https://mermaid.js.org/
 - JavaScript-based diagramming tool
 - Text file based
-- Command line to create image files from text filex
+- Command line to create image files from text files
 - creates flowcharts, sequence diagrams, class diagrams, entity-relationship diagrams, Gantt charts and others
 - npm package
 
